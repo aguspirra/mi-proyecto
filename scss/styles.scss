@@ -1,0 +1,464 @@
+/*$ancho:720px;*/
+
+$blue: #4285f4;
+$green: #33d374;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+    font-size: 16px;
+}
+
+
+/* inicio*/
+
+header {
+    margin: 1px 1px 1px 1px;
+    width: 100%;
+    height: 600px;
+    background: url('../img/iron.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .contenedor-nav .logo {
+    top: 42px;
+    float: left;
+}
+
+header .contenedor-nav .icono {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    background: url("../img/logofrk1.jpg");
+    line-height: 42px;
+    animation-name: mianimacion;
+    animation-duration: 10s;
+}
+
+@keyframes mianimacion {
+    0% {
+        opacity: 0;
+        transform: scale(.1);
+        rotate: (0deg);
+    }
+    50% {
+        transform: scale(1);
+        rotate: (405deg);
+    }
+    100% {
+        transform: scale(1);
+        rotate: (225deg);
+        opacity: 1;
+    }
+}
+
+.nav-principal {
+    padding: 0px;
+    background: #150949;
+    overflow: hidden;
+    li {
+        float: right;
+        list-style-type: none;
+        a {
+            color: $blue;
+            padding: 16px 16px;
+            &:hover {
+                background: violet;
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.textos-h {
+    margin: 150px 0;
+    text-align: center;
+}
+
+.textos-h .titulo-h {
+    color: $green;
+}
+
+header .textos-h .parrafo-h {
+    color: $green;
+}
+
+.jas {
+    border: 1px solid white;
+    color: $green;
+    background: #150949;
+}
+
+.jaso {
+    color: #f6f6f6;
+    background: #1caf9f;
+}
+
+.footer-h {
+    height: 80px;
+    text-align: center;
+    background: #1caf9f;
+    color: #081b1d;
+}
+
+.footer-h .redes {
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 5px;
+    line-height: 42px;
+}
+
+.footer-h #icono1 {
+    top: 40px;
+    right: 20px;
+    list-style: none;
+    background: url("../img/facie.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-h #icono2 {
+    top: 40px;
+    right: 20px;
+    list-style: none;
+    background: url("../img/twitt.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-h #icono3 {
+    top: 40px;
+    right: 20px;
+    list-style: none;
+    background: url("../img/inas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* fin de inicio */
+
+
+/* productos */
+
+.texto-productos {
+    margin: 1px 1px 1px 1px;
+    font-weight: normal;
+    background: linear-gradient(to bottom, #4c4c64, #3f3a84, #15162d);
+    ;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.texto-productos img {
+    width: 33%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.texto-productos .titulo-productos {
+    color: $blue;
+}
+
+.texto-productos .parrafo-productos {
+    color: $blue;
+}
+
+.descripcion-productos {
+    margin: 1px 1px 1px 1px;
+    width: 100%;
+    height: 600px;
+    background: url("../img/beef.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.descripcion-productos .titulo-descripcion {
+    text-align: center;
+    color: $blue;
+    background: #3f3a84;
+}
+
+.descripcion-productos img {
+    display: block;
+    margin: auto;
+}
+
+.descripcion-productos .table-p {
+    display: flex;
+    display: table;
+    flex-direction: row;
+    justify-content: center;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.table-p {
+    height: 100px;
+    color: #081b1d;
+}
+
+.descripcion-productos .titulo-grid {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100px 100px 100px 100px;
+}
+
+#box {
+    padding: 10px;
+    border: 1px solid black;
+    color: #f6f6f6;
+    text-align: center;
+}
+
+.box-1 {
+    background: blue;
+}
+
+.box-2 {
+    background: blueviolet;
+}
+
+.box-3 {
+    background: coral;
+}
+
+.box-4 {
+    background: darkgreen;
+}
+
+.box-5 {
+    background: darkorange;
+}
+
+.box-6 {
+    background: deepskyblue;
+}
+
+.box-7 {
+    background: hotpink;
+}
+
+.box-8 {
+    background: #db1919;
+}
+
+
+/* fin de productos */
+
+
+/* criticas */
+
+.criticas-textos {
+    margin: 1px 1px 1px 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 800px;
+    background: linear-gradient(to bottom, #ce1851, #66132c, #351120);
+    ;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.criticas-textos img {
+    display: block;
+    margin: auto;
+}
+
+.criticas-textos .criticas-titulo {
+    color: $green;
+    background: url("../img/escar.jpg");
+}
+
+.criticas-textos .criticas-titulos {
+    color: #aec3f0;
+}
+
+.criticas-textos .critica-parrafo {
+    color: #aec3f0;
+}
+
+
+/* fin de criticas */
+
+
+/* noticias */
+
+.noticias {
+    margin: 1px 1px 1px 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 800px;
+    /* padding: 16px 16px;*/
+    background: linear-gradient(to bottom, #d91637, #84123c, #9c1c5c);
+    ;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#alert-alert-primary {
+    margin: 0px;
+}
+
+.noticias .noticias-titulo {
+    color: $blue;
+    background: url("../img/cad6.jpg");
+}
+
+.noticias .titulo-n {
+    color: #fae7e0;
+}
+
+.noticias .parrafo-n {
+    padding: 16px 16px;
+    color: #fae7e0;
+}
+
+
+/* fin de noticias */
+
+
+/* contacto */
+
+.contacto {
+    margin: 1px 1px 1px 1px;
+    background: url("../img/des3.jpg");
+}
+
+.contacto .titulo-contacto {
+    color: $blue;
+}
+
+.contacto .parrafo-contacto {
+    color: $blue;
+}
+
+.form-c {
+    margin: 1px 1px 1px 1px;
+    padding: 15px 20px;
+    /*margin-bottom: 20px;*/
+    width: 100%;
+    height: 550px;
+    background: url("../img/galaxi1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #1da7da;
+    color: #db1919;
+    border-radius: 3px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.form-c .field-c .mensaje {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+}
+
+.form-c .field-c {
+    color: #1da7da;
+}
+
+
+/* fin de contacto */
+
+
+/* media */
+
+@media screen and (max-width: 400px) {
+    header {
+        background: url("../img/guan.jpg");
+    }
+    .textos-h .titulo-h {
+        color: $blue;
+    }
+    header .textos-h .parrafo-h {
+        color: $blue;
+    }
+    .nav-principal {
+        border: 1px solid white;
+        background: #2b2f4f;
+    }
+    .nav-principal .checkbtn {
+        display: block;
+    }
+    .chick {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .chick ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .chick ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082c6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+    .jas {
+        color: #f6f6f6;
+        background: #2b2f4f;
+    }
+    .footer-h {
+        color: #f6f6f6;
+        background: #192520;
+    }
+    .footer-h .social {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-h .social .redes {
+        padding: 5px;
+        margin: 5px;
+    }
+}
